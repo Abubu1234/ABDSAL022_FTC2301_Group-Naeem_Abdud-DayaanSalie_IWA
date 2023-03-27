@@ -1,0 +1,12 @@
+:root{ 
+    --color-green:
+    --color-white:
+    --color-dark-grey: #424250;
+    --color-light-grey:var(--color-green)
+    --color-medium-grey:var(--color-green)
+}
+* {box-sizing: border-box;
+}
+body {
+    margin: 0px;
+background: red;}
