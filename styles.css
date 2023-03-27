@@ -1,12 +1,25 @@
 :root{ 
-    --color-green:
-    --color-white:
-    --color-dark-grey: #424250;
-    --color-light-grey:var(--color-green)
-    --color-medium-grey:var(--color-green)
+    --color-green:#31c48d;
+    --color-white:#ffff;
+    --color-dark-grey: #33333d;
+    --color-medium-grey:#424250;
+    --color-light-grey:#d2d6dc; 
+    
 }
 * {box-sizing: border-box;
 }
 body {
     margin: 0px;
-background: red;}
+background:var(--color-medium-grey);
+color: var(--color-white);
+font-family: Roboto, Arial, Helvetica, sans-serif;}
+/* header */
+.header {text-align: center;}
+
+/* counter */
+
+.counter { background: var(--color-dark-grey);}
+
+
+/* controls */
+.controls{background:yellow  ;}
