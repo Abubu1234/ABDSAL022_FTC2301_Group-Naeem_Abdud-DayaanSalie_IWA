@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tally Count</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/script.js" defer></script>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <h1>
-            Tally Count
-        </h1>
+      <h1>Tally Count</h1>
     </header>
-    <aside class="controls">
+    <!-- <aside class="controls">
         <span>Display</span>
         <label>
             <select>
@@ -36,11 +37,20 @@
         </label>
 
         <button>Settings</button>
-    </aside>
+    </aside> -->
     <main class="counter">
-       <input>
-    </main>
-    <footer></footer>
-</body>
+      <input class="counter__value" data-key="number" readonly value="0" />
 
+      <div class="counter__actions">
+        <button data-key="substract" class="counter__button counter__button_first">-</button>
+        <button data-key="add" class="counter__button">+</button>
+      </div>
+    </main>
+    <footer class="footer">
+      Inspire by
+      <a class="footer__link" href="https://tallycount.app">Tally Count</a>.
+      Note that this is merely a student practice project for learning
+      JavaScript.
+    </footer>
+  </body>
 </html>
