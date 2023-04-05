@@ -21,7 +21,7 @@ if (myLocation === "RSA") {
    currency === "R" 
 } 
 if(myLocation === "NAM") {
-    let shipping = 600 : 800 
+    let shipping = 600 || 800 
     currency === "$"
 } 
 
