@@ -1,53 +1,51 @@
-FREE_WARNING = 'Free shipping only applies to single customer orders'
-BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
-NONE_SELECTED = 0
 
-let location = "RSA" || "NAM"
+const FREE_WARNING = 'Free shipping only applies to single customer orders'
+const BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
+const NONE_SELECTED = 0
+
+const myLocation = "RSA"
 let shipping = null
-let currency = "R" || "$"
-let customers = 1
+let currency = null
+const customers = 1
 const price = shipping + total
+const shoes = 300 * 1
+const toys = 100 * 5
+const shirts = 150 * NONE_SELECTED
+const batteries = 35 * 2
+const pens = 5 * NONE_SELECTED
 
-if (location = "RSA") {
-	shipping === 400
-	currency === "R" 
-} else if (location === "NAM") {
-	shipping = 600
-	currency = "$"
-} else {
-	shipping = 800
-}
+const total = (shoes + toys + shirts + batteries + pens)
 
-if ( location = "NAM") {
-	shipping = 600 && currency === "$"
+
+if (myLocation === "RSA") {
+   let shipping = 400 
+   currency === "R" 
 } 
-if (shipping = 800) {
-	location = "NK"
+if(myLocation === "NAM") {
+    let shipping = 600 || 800 
+	currency === "$"
+} 
+
+
+
+if (total > 1000 && customers === 1) {
+    let shipping = 0
 }
 
-shoes = 300 * 1
-toys = 100 * 5
-shirts = 150 * NONE_SELECTED
-batteries = 35 * 2
-pens = 5 * NONE_SELECTED 
 
-var total = (shoes + toys + shirts + batteries + pens)
-
-if (total > 1000) {
-	shipping = 0 || calcShipping
+if (shipping = 0 && customers === 1  ){ 
+    console.log(FREE_WARNING) 
 }
 
-if (shipping = 0 && customers !== 1  ){ 
-	console.log(FREE_WARNING) 
-}
-    
 
-if (location === "NK"){ 
-	console.log(total, currency, shoes + batteries + pens + shirts + shipping) 
-	
+if (myLocation === "NK" && customers === 1){ 
+    console.log(currency, total + shipping, customers ) 
+
 } else {
-	console.log(BANNED_WARNING)  
+    console.log(BANNED_WARNING)
 }
 
-customers = 1
-currency = null
+
+if (myLocation === "RSA" || "NAM"){
+    console.log(FREE_WARNING) && console.log(currency, shoes + batteries + pens + shirts + shipping + toys)
+}
