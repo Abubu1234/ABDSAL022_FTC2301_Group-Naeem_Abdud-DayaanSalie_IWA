@@ -1,4 +1,3 @@
-
 const FREE_WARNING = 'Free shipping only applies to single customer orders'
 const BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
 const NONE_SELECTED = 0
@@ -22,8 +21,8 @@ if (myLocation === "RSA") {
    currency === "R" 
 } 
 if(myLocation === "NAM") {
-    let shipping = 600 || 800 
-	currency === "$"
+    let shipping = 600 : 800 
+    currency === "$"
 } 
 
 
