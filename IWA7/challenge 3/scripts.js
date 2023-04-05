@@ -10,5 +10,10 @@ const divider = '----------------------------------'
 
 // Only change below this line
 
-const owed = parseInt(leoBalance = sarahBalance)
-console.log(owed) 
+const owed = "R" + parseInt(leoBalance) + parseInt(sarahBalance)
+const leo = " ${leoName} + ${leoSurname} + \"owed\" + \"R\" + ${sarahBalance}"
+const sarah = " ${sarahName} + ${sarahSurname} + \"Owed\" + \"R\" + ${sarahBalance}"
+const total = "Total amount owed: "
+const result = leo + sarah + divider + divider + total + owed + divider
+
+console.log(result.toFixed(2))
