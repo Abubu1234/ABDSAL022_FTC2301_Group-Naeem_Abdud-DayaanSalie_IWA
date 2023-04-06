@@ -6,13 +6,13 @@ const transport = 10.2;
 const hourOfDay = 00;
 const minuteOfDay = 00;
 
-// Only change beconst taxAsDecimal = tax / '100';
-const taxAsDecimal = tax / '100';
-const startingAfterTax = salary * '1' - taxAsDecimal;
-const balance = starting - transport - food - rent
+// Only change below the line
 
-if (hourOfDay !== null) && (minuteOfDay !== null) && (hourOfDay == '00') && (minuteOfDay == '00') {
 
+if (hourOfDay !== null && minuteOfDay !== null && hourOfDay == '00' && minuteOfDay == '00') {
+    const taxAsDecimal = parseInt(tax) / parseInt('100');
+    const startingAfterTax = salary * (parseInt('1') - taxAsDecimal);
+    const balance = startingAfterTax - transport - food - rent;
+    console.log("R", balance .toFixed(2))
 }
 	
-console.log(balance .toFixed(2))

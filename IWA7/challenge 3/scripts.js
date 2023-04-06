@@ -10,5 +10,10 @@ const divider = '----------------------------------'
 
 // Only change below this line
 
-const owed = parseInt(leoBalance = sarahBalance)
-console.log(owed) 
+const owed =(-parseInt(leoBalance).toFixed(2) )+ (-parseFloat(sarahBalance).toFixed(2))
+const leo = `${leoName} ${leoSurname.trimEnd()} (Owed: R ${parseFloat(-leoBalance).toFixed(2)})`
+const sarah =`${sarahName.trimEnd()} ${sarahSurname} (Owed:R${parseInt(-sarahBalance).toFixed(2)})`
+const total = `Total amount owed:` 
+const result = `${leo}\n${sarah}\n\n${divider}\n${total}\t${owed}\n ${divider}`
+
+console.log(result)
