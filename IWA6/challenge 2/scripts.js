@@ -6,7 +6,7 @@ const transport = 10.2;
 const hourOfDay = 00;
 const minuteOfDay = 00;
 
-// Only change beconst taxAsDecimal = tax / '100';
+// Only change below the line
 
 
 if (hourOfDay !== null && minuteOfDay !== null && hourOfDay == '00' && minuteOfDay == '00') {
