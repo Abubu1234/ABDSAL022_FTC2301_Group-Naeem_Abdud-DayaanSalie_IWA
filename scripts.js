@@ -1,38 +1,41 @@
-const salary = 4000;
-const lodging = 'apartment'
-const size = 'large'
+const leoName = 'Leo Musvaire'
+const leoNumber = '2'
+const leoStreet = 'Church St.'
+const leoPostal = '3105'
+const leoBalance = '-10'
 
+const sarahName = 'Sarah    '
+const sarahSurname = 'Kleinhans'
+const sarahBalance = '-4582.21000111'
+const sarahNumber = '13'
+const sarahStreet = 'William Close'
+const sarahPostal = '0310'
 
-// Only change the syntax below (not the values or key names)
+// Only change below this line
 
-const expenses = {
-    food: 51.7501,
-    transport:  10.2,
-}
-  
-const tax = {
-    734: '3%',
-    234: '20%',
-    913: '12%',
-    415: '38%',
-    502: '42%',
-}
-
-const rent = {
-    none: 0,
-    'small-room': 200,
-    'large-room': 300,
-    'small-apartment': 400,
-    'large-apartment': 800,
-    'small-house': 1200,
-    'large-house': 2400,
+const leo = {
+	aName: leoName,
+	balance: leoBalance,
+	accessId: `47afb389-8014-4d0b-aff3-e40203d2107f`,
+	age: 24,
+	address: {
+	number: leoNumber,
+	street: leoStreet,
+	postalCode: leoPostal,
+	}
 }
 
-// You can change below however you want
-
-const taxAsDecimal = tax 913 / 100
-const startingAfterTax = salary * 1 - taxAsDecimal
-const type = lodging + size
-const balance = expenses(transport) - expenses(food) - expenses(rent.type) 
-console.log(balance)
+const sarah = {
+	aName: `${sarahName.trimEnd()}  ${sarahSurname}`,
+	age: 62,
+	accessId: `6b279ae5-5657-4240-80e9-23f6b635f7a8`,
+	balance: sarahBalance,
+	address: {
+	number: sarahNumber,
+	street: sarahStreet,
+    postalCode: sarahPostal,
+	}
+}
+console.log(leo, leo[`address`][`postalCode`])
+console.log(sarah, sarah[`address`][`postalCode`])
  
