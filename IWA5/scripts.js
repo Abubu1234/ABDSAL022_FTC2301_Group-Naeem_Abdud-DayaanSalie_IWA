@@ -14,29 +14,29 @@ const pens = 5 * NONE_SELECTED
 const total = (shoes + toys + shirts + batteries + pens)
 const price = shipping + total
 
+
 if (myLocation === "RSA") {
-     shipping = 400 
-    currency = "R"
-} else if(myLocation === "NAM") {
-    shipping = 600 || 800 
-    currency = "$"
-} 
-if (total > 1000) {
-    if (myLocation === "NAM" && customers < 2){
-        shipping = 0
-    } else if (myLocation === "RSA" && customer < 2)
-{
-shipping = 0 
-}
-}
-
-if ((shipping !== 0) && (customers !== 1)){
-    console.log(currency , price , customers ) + console.log(FREE_WARNING) 
-}
-
-if (myLocation === "NK"){
-    console.log(BANNED_WARNING)
-} 
-
- 
+    shipping = 400 
+    currency === "R" 
+ } 
+ if(myLocation === "NAM") {
+     shipping = 600 || 800 
+     currency === "$"
+ } 
+    
+ if (total > 1000 && customers === 1) {
+    shipping = 0
+ }
+     
+ if (shipping = 0 && customers === 1  ){ 
+     console.log(FREE_WARNING) 
+ }
+ if (myLocation === "NK" && customers === 1){ 
+     console.log(currency, total + shipping, customers ) 
+ } else {
+     console.log(BANNED_WARNING)
+ }
+ if (myLocation === "RSA" || "NAM"){
+     console.log(FREE_WARNING) && console.log(currency, shoes + batteries + pens + shirts + shipping + toys)
+ }
 
