@@ -4,7 +4,7 @@ const leoStreet = 'Church St.'
 const leoPostal = '3105'
 const leoBalance = '-10'
 
-const sarahName = 'Sarah    '
+const sarahName = 'Sarah 	   '
 const sarahSurname = 'Kleinhans'
 const sarahBalance = '-4582.21000111'
 const sarahNumber = '13'
@@ -18,7 +18,7 @@ const leo = {
 	balance: leoBalance,
 	accessId: `47afb389-8014-4d0b-aff3-e40203d2107f`,
 	age: 24,
-	address: {
+	address: { 
 	number: leoNumber,
 	street: leoStreet,
 	postalCode: leoPostal,
@@ -36,6 +36,6 @@ const sarah = {
     postalCode: sarahPostal,
 	}
 }
-console.log(leo, leo[`address`][`postalCode`])
-console.log(sarah, sarah[`address`][`postalCode`])
+console.log(leo,leo.address.postalCode)
+console.log(sarah, sarah.address.postalCode)
  
