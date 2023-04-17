@@ -1,34 +1,34 @@
 // script.js
 
-const root1 = document(order1)
-const biscuits1 = document(biscuits1)
-const donuts1 = document(donuts1)
-const pancakes1 = document(pancakes1)
-const status1 = document(status1)
+const order1 = document.querySelector('[data-key="order1"]');
+const order1Biscuits = order1.querySelector('.biscuits .count');
+const order1Donuts = order1.querySelector('.donuts .count');
+const order1Pancakes = order1.querySelector('.pancakes .count');
+const order1Status = order1.querySelector('.status dd');
 
-const root2 = document(order2)
-const biscuits2 = document(biscuits2)
-const donuts2 = document(donuts2)
-const pancakes2 = document(pancake2s)
-const status2 = document(status2)
+const order2 = document.querySelector('[data-key="order2"]');
+const order2Biscuits = order2.querySelector('.biscuits .count');
+const order2Donuts = order2.querySelector('.donuts .count');
+const order2Pancakes = order2.querySelector('.pancakes .count');
+const order2Status = order2.querySelector('status dd');
 
-const root3 = document(order3)
-const biscuits3 = document(biscuit3)
-const donuts3 = document(donuts3)
-const pancakes3 = document(pancakes3)
-const status3 = document(status3)
+const order3 = document.querySelector('[data-key="order3"]');
+const order3Biscuits = order3.querySelector('.biscuits .count');
+const order3Donuts = order3.querySelector('.donut s.count');
+const order3Pancakes = order3.querySelector('.pancakes .count');
+const order3Status = order3.querySelector('.status dd');
 
-biscuits1 = root1.biscuits1,
-donuts1 = root1.donuts1,
-pancakes1 = root1.pancakes1,
-status1 = root1.status1 ? Delivered : Pending
+order1Biscuits.innerText = order1.dataset.biscuits;
+order1Donuts.innerText = order1.dataset.donuts;
+order1Pancakes.innerText = order1.dataset.pancakes;
+order1Status.innerText = order1.dataset.delivered === "true" ? 'Delivered' : 'Pending';
 
-biscuits2= root2.biscuits2,
-donuts2 = root2.donuts2,
-pancakes2 = root2.pancakes2,
-status2 = roo2t.status2 ? Delivered : Pending
+order2Biscuits.innerText = order2.dataset.biscuits;
+order2Donuts.innerText = order2.dataset.donuts;
+order2Pancakes.innerText = order2.dataset.pancakes;
+order2Status.innerText = order2.dataset.delivered === "true" ? 'Delivered' : 'Pending';
 
-biscuits3 = root3.biscuits3,
-donuts3 = root3.donuts3,
-pancakes3 = root3.pancakes3,
-status3 = root3.status3 ? Delivered : Pending
+order3Biscuits.innerText = order3.dataset.biscuits;
+order3Donuts.innerText = order3.dataset.donuts;
+order3Pancakes.innerText = order3.dataset.pancakes;
+order3Status.innerText = order3.dataset.delivered === "true" ? 'Delivered' : 'Pending';
