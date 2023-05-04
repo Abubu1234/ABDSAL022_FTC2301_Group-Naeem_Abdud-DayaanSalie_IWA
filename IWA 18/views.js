@@ -28,6 +28,7 @@ export const createOrderHtml = (order) => {
                 <dt>Table:</dt>
                 <dd class="order__value" data-order-table>${table}</dd>
             </div>
+
             <div class="order__row">
                 <dt>Ordered:</dt>
                 <dd class="order__value">${hours}:${minutes}</dd>

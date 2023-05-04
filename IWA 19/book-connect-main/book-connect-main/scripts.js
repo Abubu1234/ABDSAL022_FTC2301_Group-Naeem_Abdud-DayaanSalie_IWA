@@ -1,4 +1,4 @@
-import 
+import {BOOKS_PER_PAGE} from `./data`
 matches = books
 page = 1;
 
@@ -15,10 +15,10 @@ night = {
     light: '10, 10, 20',
 }
 
-fragment = document.createDocumentFragment()
+fragment = document.createDocumentFragment();
 const extracted = books.slice(0, 36)
-
-for ({ author, image, title, id }; extracted; i++) {
+// set for loop to stop when the "extracted" var is equal to 36
+for ({ author, image, title, id }; i <= extracted; i++) {
     const preview = createPreview({
         author,
         id,
@@ -64,8 +64,8 @@ data-search-authors.appendChild(authors)
 data-settings-theme.value === window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day'
 v = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches? 'night' | 'day'
 
-documentElement.style.setProperty('--color-dark', css[v].dark);
-documentElement.style.setProperty('--color-light', css[v].light);
+document.createElement.style.setProperty('--color-dark', css[v].dark);
+document.createElement.style.setProperty('--color-light', css[v].light);
 data-list-button = "Show more (books.length - BOOKS_PER_PAGE)"
 
 data-list-button.disabled = !(matches.length - [page * BOOKS_PER_PAGE] > 0)
@@ -75,7 +75,7 @@ data-list-button.innerHTML = /* html */ [
     '<span class="list__remaining"> (${matches.length - [page * BOOKS_PER_PAGE] > 0 ? matches.length - [page * BOOKS_PER_PAGE] : 0})</span>',
 ]
 
-data-search-cancel.click() { data-search-overlay.open === false }
+data-search-cancel.click() {data-search-overlay.open === false }
 data-settings-cancel.click() { querySelect(data-settings-overlay).open === false }
 data-settings-form.submit() { actions.settings.submit }
 data-list-close.click() { data-list-active.open === false }
@@ -160,7 +160,7 @@ data-settings-overlay.submit; {
     const result = Object.fromEntries(formData)
     document.documentElement.style.setProperty('--color-dark', css[result.theme].dark);
     document.documentElement.style.setProperty('--color-light', css[result.theme].light);
-    data-settings-overlay).open === false
+    data-settings-overlay.open === false
 }
 
 data-list-items.click() {
