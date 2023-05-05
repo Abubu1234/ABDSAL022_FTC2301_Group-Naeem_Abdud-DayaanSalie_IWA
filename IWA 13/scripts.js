@@ -5,17 +5,10 @@ let calculated = '1'
 // Only allowed to change below
 
 
-<<<<<<< HEAD
-const logCalc = () => { 
-    const isString = typeof calculated 
-    const calculatedAsNumber = !isString ? calculated : parseInt(calculated)
-    calculated = calculatedAsNumber + 1
-=======
 const  logCalc = () => { 
     const isString = typeof calculated 
     const calculatedAsNumber = !isString ? calculated : parseInt(calculated)
     calculated = calculatedAsNumber + 1 
->>>>>>> aa43f2afe4ea16677b887aea6502b8754ef7906a
 }
 
 const calcUser = () => {
